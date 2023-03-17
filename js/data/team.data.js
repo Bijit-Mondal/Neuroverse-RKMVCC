@@ -6,62 +6,62 @@ let teamDetails = [
     {
         id: 1,
         name: "Jishnu Bandyopadhyay",
-        avatar: "/assets/img/team/utpalendu_barman.jpg",
+        avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/17/Jishnu_uid_6414962903dff.jpeg",
         desc: "Organizer",
 
         socialIcon1: "bx bxl-github",
-        socialLink1: "https://github.com/utpalendubarman",
+        socialLink1: "https://github.com/TheRealJishnu",
 
         socialIcon2: "bx bxl-linkedin",
-        socialLink2: "https://www.linkedin.com/in/utpalendubarman/",
+        socialLink2: "https://www.linkedin.com/in/jishnu-bandyopadhyay-051353246/",
 
         socialIcon3: "bx bx-code-alt",
-        socialLink3: "https://twitter.com/badhanbarman",
+        socialLink3: "https://www.hackerrank.com/therealjishnu",
     },
     {
         id: 2,
         name: "Darpan Bhattacharya",
-        avatar: "/assets/img/team/niloy_sikdar.jpg",
+        avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/17/Darpan_uid_64149629daefa.jpeg",
         desc: "Organizer",
 
         socialIcon1: "bx bxl-github",
-        socialLink1: "https://github.com/niloysikdar",
+        socialLink1: "https://github.com/darpan-b",
 
         socialIcon2: "bx bxl-linkedin",
-        socialLink2: "https://www.linkedin.com/in/niloysikdar/",
+        socialLink2: "http://in.linkedin.com/in/darpan-bhattacharya-b79811247",
 
         socialIcon3: "bx bx-code-alt",
-        socialLink3: "https://twitter.com/niloysikdar_",
+        socialLink3: "http://hackerrank.com/winxtron",
     },
     {
         id: 3,
         name: "Bitan Majumder",
-        avatar: "/assets/img/team/anubhab_sarkar.jpg",
+        avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/17/Bitan_uid_6414962a694a6.jpeg",
         desc: "Organizer",
 
         socialIcon1: "bx bxl-github",
-        socialLink1: "https://github.com/anubhab1710",
+        socialLink1: "https://github.com/bitanM",
 
         socialIcon2: "bx bxl-linkedin",
-        socialLink2: "https://www.linkedin.com/in/anubhabsarkar/",
+        socialLink2: "https://www.linkedin.com/in/bitan-majumder-672801237",
 
         socialIcon3: "bx bx-code-alt",
-        socialLink3: "https://twitter.com/xperiencewhiz",
+        socialLink3: "https://www.hackerrank.com/bitanmajumder201",
     },
     {
         id: 4,
         name: "Bijit Mondal",
-        avatar: "/assets/img/team/niladri_mondal.jpg",
+        avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/17/Bijit_uid_641496a7a8e4d.jpg",
         desc: "Organizer",
 
         socialIcon1: "bx bxl-github",
-        socialLink1: "https://github.com/imniladri",
+        socialLink1: "https://github.com/Bijit-Mondal",
 
         socialIcon2: "bx bxl-linkedin",
-        socialLink2: "https://www.linkedin.com/in/imniladrimondal/",
+        socialLink2: "https://www.linkedin.com/in/bijit-mondal-3b196721b",
 
         socialIcon3: "bx bx-code-alt",
-        socialLink3: "https://twitter.com/imniladrimondal",
+        socialLink3: "https://www.hackerrank.com/bijitmondal567",
     }
 ];
 
@@ -75,7 +75,7 @@ Object.values(teamDetails).map((val) => {
     teamDiv.innerHTML += `
         <!-- Member ${val.id} -->
         <div class="member_card">
-            <img src="${val.avatar}" alt="Profile Img" />
+            <img src="${val.avatar}" width="200px" height="200px" alt="Profile Img" />
             <h2>${val.name}</h2>
             <p><span>${val.desc}</span></p>
             <div class="social">
