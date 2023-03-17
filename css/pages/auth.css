@@ -20,9 +20,10 @@ section#auth_register::before {
 }
 
 :root {
-    --secondaryoff: #009dae;
+    --secondaryoff: #da7c02;
     --warningoff: #ff3838;
     --discordBg: #404eed;
+    --whatsappBg:#075E54;
 }
 
 /* **************************** Sub Head Section **************************** */
@@ -367,7 +368,7 @@ div.form_modal a {
     font-weight: 500;
     font-family: var(--codefont);
     color: var(--darkwhite);
-    background: var(--discordBg);
+    background: var(--whatsappBg);
     text-align: center;
     text-decoration: none;
     border-radius: 6px;

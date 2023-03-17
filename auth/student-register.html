@@ -3,9 +3,9 @@
 
 <head>
     <!-- Site Title -->
-    <title>Mentee's Registration | JWoC 2K22</title>
+    <title>Neurotechies Registration | Neuroverse 2K23</title>
     <!-- Favicon-->
-    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.svg" />
+    <link rel="shortcut icon" type="image/png" href="../assets/img/jwoc_icon.svg" />
 
     <!-- Meta Character & Device Dimension -->
     <meta charset="UTF-8" />
@@ -13,25 +13,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
     <!-- Meta Author, Description, Keywords -->
-    <meta name="author" content="JWOC ORG" />
-    <meta name="description" content="Mentee Registration for JWoC: JGEC Winter of Code, 2k22." />
-    <meta name="keywords" content="jwoc, 2k22, jgec, winter, developer, code, jgec winter of code" />
+    <meta name="author" content="Neuroverse ORG" />
+    <meta name="description" content="Neurotechies Registration for Neuroverse: Neuroverse, 2k23." />
+    <meta name="keywords" content="Neuroverse, 2k23, RKMVCC, coding, competition, code, Neuroverse coding competition, Neuroverse 2023" />
 
     <!-- Meta OG: Site, Title, Description, Image, Link Displayed -->
-    <meta property="og:site_name" content="JWOC 2K22" />
-    <meta property="og:title" content="JWOC 2K22" />
-    <meta property="og:description" content="Mentee Registration for JWoC: JGEC Winter of Code, 2k22." />
-    <meta property="og:image" content="https://jwoc.tech/assets/img/opengraph.png" />
-    <meta property="og:url" content="https://jwoc.tech/" />
+    <meta property="og:site_name" content="Neuroverse 2k23" />
+    <meta property="og:title" content="Neuroverse 2k23" />
+    <meta property="og:description"
+        content="Neuroverse is the annual tech fest of RKMVCC for students to show their potential" />
+    <meta property="og:url" content="https://neuroverse.ilib.website/" />
+    <meta property="og:type" content="website" />
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" />
 
     <!-- Address Bar/Tab Color -->
     <!-- Mobile -->
-    <meta name="theme-color" content="#0d1524" />
+    <meta name="theme-color" content="#2d1a07" />
     <!-- Windows -->
-    <meta name="msapplication-navbutton-color" content="#0d1524" />
+    <meta name="msapplication-navbutton-color" content="#241e0d" />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/libraries/bootstrap.min.css" />
@@ -47,6 +48,7 @@
 
     <!-- Main JS -->
     <script defer src="../js/main.js"></script>
+    <script defer src="../js/participant.js"></script>
 
 </head>
 
@@ -57,7 +59,7 @@
         <nav>
             <a href="../" class="nav_brand">
                 <img src="../assets/img/jwoc_logo.svg" alt="Logo" />
-                <span>JWoC</span>
+                <span>Neuroverse</span>
             </a>
 
             <a class="btn nav_btn goBack">
@@ -71,13 +73,12 @@
     <!-- Discord Link Modal Start -->
     <div id="form_modal">
         <div class="form_modal">
-            <img src="/assets/img/discord-logo.svg" alt="Discord Logo" />
             <h2>Join Our Community</h2>
             <p>
                 You have successfully registered! <br />
-                Now join our official discord server for further announcements and communication.
+                Now check the mail and join to whatsapp group from there
             </p>
-            <a href="#" target="_blank" class="modal_btn">Join Now</a>
+            <!-- <a href="#" target="_blank" class="modal_btn">Join Now</a> -->
             <i class="bx bxs-message-square-x" id="modal_close"></i>
         </div>
     </div>
@@ -86,88 +87,74 @@
     <!-- Banner Start -->
     <section id="auth_register">
         <div class="sub_head">
-            <h2>Mentee's Registration</h2>
-            <p>Register yourself as mentee to participate in the event.</p>
-            <img src="/assets/img/winter_text.png" alt="Winter Text" />
+            <h2>Neurotechies Registration</h2>
+            <p>Register yourself as neurotechy to participate in the event.</p>
         </div>
 
         <form id="auth_form" class="container" name="mentee-registration">
             <div class="form-group">
-                <label for="name">Your Name <span>*</span></label>
+                <label for="firstName">First Name <span>*</span></label>
                 <p>How do we know you?</p>
-                <input type="text" class="form-control" placeholder="" id="name" name="Name" required />
+                <input type="text" class="form-control" placeholder="" id="FirstName" name="FirstName" required />
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name <span>*</span></label>
+                <p>How do we know you?</p>
+                <input type="text" class="form-control" placeholder="" id="LastName" name="FirstName" required />
             </div>
 
             <div class="form-group">
                 <label for="email">Email Address <span>*</span></label>
                 <p>Your email address through which we can contact :)</p>
-                <input type="email" class="form-control" placeholder="" id="email" name="Email" required />
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone Number <span>*</span></label>
-                <p>We will call you, only if required!</p>
-                <input type="tel" class="form-control" placeholder="" id="phone" name="Phone" required />
+                <input type="email" class="form-control" placeholder="" id="email" name="email" required />
             </div>
 
             <div class="form-group">
                 <label for="whatsapp">WhatsApp Number <span>*</span></label>
-                <p>We will text you, only if required!</p>
-                <input type="tel" class="form-control" placeholder="" id="whatsapp" name="Whatsapp" required />
+                <p>We will contact you, only if required!</p>
+                <input type="tel" class="form-control" placeholder="" id="phone" name="phone" required />
             </div>
 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="college">College <span>*</span></label>
                 <p>Where do you study?</p>
                 <input type="text" class="form-control" placeholder="" id="college" name="College" required />
-            </div>
+            </div> -->
 
             <div class="form-group">
-                <label for="year">Current Year <span>*</span></label>
-                <p>What is your current year of study?</p>
+                <label for="semester">Current Semester <span>*</span></label>
+                <p>What is your current semester of study?</p>
 
-                <select name="year" id="year" required>
-                    <option value="1">1st Year</option>
-                    <option value="2">2nd Year</option>
-                    <option value="3">3rd Year</option>
-                    <option value="4">4th Year</option>
+                <select name="semester" id="semester" required>
+                    <option value="2">2nd Semester</option>
+                    <option value="4">4th Semester</option>
+                    <option value="6">6th Semester</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="github">Github Profile Link <span>*</span></label>
-                <p>Please share your GitHub profile</p>
-                <input type="url" class="form-control" placeholder="" id="github" name="GitHub" required />
+                <label for="roll">Roll Number <span>*</span></label>
+                <p>Roll number of your in current sem!</p>
+                <input type="number" class="form-control" placeholder="" id="roll" name="roll" required />
             </div>
 
             <div class="form-group">
-                <label for="linkedIn">LinkedIn Profile Link <span>*</span></label>
-                <p>Please share your LinkedIn profile</p>
-                <input type="url" class="form-control" placeholder="" id="linkedIn" name="LinkedIn" required />
-            </div>
+                <label for="stream">Department <span>*</span></label>
+                <p>which department do you study in?</p>
 
-            <div class="form-group">
-                <label for="isFirstTime">Is this your first time? <span>*</span></label>
-                <p>Mention if you haven't contributed or participated in any open-source event before</p>
-
-                <select name="isFirstTime" id="isFirstTime" required>
-                    <option value="1">Yes, I haven't participated before</option>
-                    <option value="2">No, I have prior experience of open-source</option>
+                <select name="stream" id="stream" required>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Physics">Physics</option>
                 </select>
-            </div>
-
-            <div class="form-group">
-                <label for="answer1">What new things do you wish to try and learn through this event ?
-                    <span>*</span></label>
-                <p>Make sure that you can learn a lot!</p>
-                <textarea class="form-control" placeholder="" id="answer1" name="answer1" rows="4" required></textarea>
             </div>
 
             <label class="form-group input-checkbox" for="manualCheckbox">
                 <input type="checkbox" id="manualCheckbox" name="manualCheckbox" value="Manual Accepted" required />
                 <div><i class="bx bx-check"></i></div>
                 <h5>
-                    I have read the <a href="../docs/student-manual.html" target="_blank">mentees' manual</a>
+                    I have read the <a href="#" target="_blank">neurotechies' manual</a>
                     and will follow the rules & regulations. <span>*</span>
                 </h5>
             </label>
@@ -181,13 +168,13 @@
     <!-- Footer Start -->
     <footer class="default">
         <img src="../assets/img/jwoc_logo.svg" alt="Logo" />
-        <h2>JWOC</h2>
-        <h4>JGEC Winter of Code</h4>
-        <p>Copyright &copy; JWOC 2022. All rights reserved.</p>
+        <h2>Neuroverse</h2>
+        <h4>Neuroverse Coding competition</h4>
+        <p>Copyright &copy; Neuroverse 2023. All rights reserved.</p>
         <div class="social">
-            <a href="mailto:admin@jwoc.tech"><i class="bx bxs-envelope"></i></a>
-            <a href="https://github.com/jwoc-jgec"><i class="bx bxl-github"></i></a>
-            <a href="https://www.linkedin.com/company/jwoc/"><i class="bx bxl-linkedin"></i></a>
+            <a href="mailto:bijitmondalrkmvcc@gmail.com"><i class="bx bxs-envelope"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/school/ramkrishna-mission-vivekananda-centenary-college/"><i class="bx bxl-linkedin"></i></a>
             <a href="#"><i class="bx bxl-twitter"></i></a>
         </div>
     </footer>
