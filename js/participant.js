@@ -28,9 +28,17 @@ registerButton.addEventListener('click', (event) => {
         })
     };
     fetch('https://neuroverse.bijit.xyz/api/v1/participant/create', options)
-      .then(response => response.json())
-      .then(response => console.log(response))
-      .catch(err => console.error(err));
+      .then(response => {
+        return response.json();
+      })
+      .then(response => {
+        if(response.status == 200){
+          $("div#form_modal").toggleClass("active");
+        }else{
+          alert(response.message);
+        }
+      })
+      .catch(err => alert(err));
   } else {
     alert("All Details are not given properly")
   }
