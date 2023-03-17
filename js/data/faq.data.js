@@ -5,7 +5,7 @@
 let faqQuesAns = [
     {
         id: 1,
-        faqQues: "I am not a student of JGEC, Can I participate?",
+        faqQues: "I am not a student of Computer Science, Can I participate?",
         faqAns: "Yes, you can definitely participate.",
         faqIcon: "bx bx-buildings",
     },
@@ -21,18 +21,18 @@ let faqQuesAns = [
         faqAns: "No, this is an individual event.",
         faqIcon: "bx bxs-group",
     },
-    {
-        id: 4,
-        faqQues: "I don't know open source can I participate?",
-        faqAns: "Then you must participate, because the aim of our event is to get more people into open source development.",
-        faqIcon: "bx bxs-package",
-    },
-    {
-        id: 5,
-        faqQues: "Can I participate both as mentee and mentor?",
-        faqAns: "No we don't encourage that.",
-        faqIcon: "bx bx-hourglass",
-    },
+    // {
+    //     id: 4,
+    //     faqQues: "I don't know open source can I participate?",
+    //     faqAns: "Then you must participate, because the aim of our event is to get more people into open source development.",
+    //     faqIcon: "bx bxs-package",
+    // },
+    // {
+    //     id: 5,
+    //     faqQues: "Can I participate both as mentee and mentor?",
+    //     faqAns: "No we don't encourage that.",
+    //     faqIcon: "bx bx-hourglass",
+    // },
     {
         id: 6,
         faqQues: "What perks will I get?",
@@ -45,12 +45,12 @@ let faqQuesAns = [
         faqAns: "Contact Us, We will be happy to help you.",
         faqIcon: "bx bxs-chat",
     },
-    {
-        id: 8,
-        faqQues: "Can 3rd year students also participate?",
-        faqAns: "You can participate as a mentee if you are a beginner to open source and development. If you have sound knowledge about these, then we highly encourage you to participate as a mentor or project admin.",
-        faqIcon: "bx bxs-quote-right",
-    },
+    // {
+    //     id: 8,
+    //     faqQues: "Can 3rd year students also participate?",
+    //     faqAns: "You can participate as a mentee if you are a beginner to open source and development. If you have sound knowledge about these, then we highly encourage you to participate as a mentor or project admin.",
+    //     faqIcon: "bx bxs-quote-right",
+    // },
 ];
 
 /* ********************************************************** */

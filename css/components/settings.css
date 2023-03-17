@@ -52,20 +52,20 @@ body {
 
 :root {
     /* Default Colors */
-    --darkblack: #222831;
-    --lightblack: #3c434e;
+    --darkblack: #312822;
+    --lightblack: #5a4735fb;
     --darkwhite: #ffffff;
-    --lightwhite: #f7fafc;
-    --darkgrey: #787a91;
+    --lightwhite: #fcfbf7;
+    --darkgrey: #b8986e;
     --lightgrey: #9ba4b4;
 
     /* Theme Colors */
-    --primaryoff: #99feff;
-    --primarylight: #385cf0;
-    --primarydark: #1d4cb0;
+    --primaryoff: #ffd299;;
+    --primarylight: #ff8b3ee6;
+    --primarydark: #cf6603;
     --highlight: #f7f0c2;
-    --lightorange: #ff8d01;
-    --lightgreen: #20ce65;
+    --lightorange: #ff3c01;
+    --lightgreen: #eed547;
 
     /* Default Fonts */
     --mainfont: "Inter", sans-serif;

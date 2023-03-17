@@ -5,7 +5,7 @@
 let teamDetails = [
     {
         id: 1,
-        name: "Utpalendu Barman",
+        name: "Jishnu Bandyopadhyay",
         avatar: "/assets/img/team/utpalendu_barman.jpg",
         desc: "Organizer",
 
@@ -15,12 +15,12 @@ let teamDetails = [
         socialIcon2: "bx bxl-linkedin",
         socialLink2: "https://www.linkedin.com/in/utpalendubarman/",
 
-        socialIcon3: "bx bxl-twitter",
+        socialIcon3: "bx bx-code-alt",
         socialLink3: "https://twitter.com/badhanbarman",
     },
     {
         id: 2,
-        name: "Niloy Sikdar",
+        name: "Darpan Bhattacharya",
         avatar: "/assets/img/team/niloy_sikdar.jpg",
         desc: "Organizer",
 
@@ -30,12 +30,12 @@ let teamDetails = [
         socialIcon2: "bx bxl-linkedin",
         socialLink2: "https://www.linkedin.com/in/niloysikdar/",
 
-        socialIcon3: "bx bxl-twitter",
+        socialIcon3: "bx bx-code-alt",
         socialLink3: "https://twitter.com/niloysikdar_",
     },
     {
         id: 3,
-        name: "Anubhab Sarkar",
+        name: "Bitan Majumder",
         avatar: "/assets/img/team/anubhab_sarkar.jpg",
         desc: "Organizer",
 
@@ -45,12 +45,12 @@ let teamDetails = [
         socialIcon2: "bx bxl-linkedin",
         socialLink2: "https://www.linkedin.com/in/anubhabsarkar/",
 
-        socialIcon3: "bx bxl-twitter",
+        socialIcon3: "bx bx-code-alt",
         socialLink3: "https://twitter.com/xperiencewhiz",
     },
     {
         id: 4,
-        name: "Niladri Mondal",
+        name: "Bijit Mondal",
         avatar: "/assets/img/team/niladri_mondal.jpg",
         desc: "Organizer",
 
@@ -60,54 +60,9 @@ let teamDetails = [
         socialIcon2: "bx bxl-linkedin",
         socialLink2: "https://www.linkedin.com/in/imniladrimondal/",
 
-        socialIcon3: "bx bxl-twitter",
+        socialIcon3: "bx bx-code-alt",
         socialLink3: "https://twitter.com/imniladrimondal",
-    },
-    {
-        id: 5,
-        name: "Shreya Paul",
-        avatar: "/assets/img/team/shreya_paul.jpg",
-        desc: "Organizer",
-
-        socialIcon1: "bx bxl-github",
-        socialLink1: "https://github.com/paulshreya",
-
-        socialIcon2: "bx bxl-linkedin",
-        socialLink2: "https://www.linkedin.com/in/shreya-paul-05a0a61aa/",
-
-        socialIcon3: "bx bxl-twitter",
-        socialLink3: "https://twitter.com/__paul_shreya__",
-    },
-    {
-        id: 6,
-        name: "Aman Prakash Jha",
-        avatar: "/assets/img/team/aman_prakash_jha.jpg",
-        desc: "Organizer",
-
-        socialIcon1: "bx bxl-github",
-        socialLink1: "https://github.com/amanjha8100",
-
-        socialIcon2: "bx bxl-linkedin",
-        socialLink2: "https://www.linkedin.com/in/aman-prakash-jha/",
-
-        socialIcon3: "bx bxl-twitter",
-        socialLink3: "https://twitter.com/aman_ItIs",
-    },
-    {
-        id: 7,
-        name: "Sagnik Roy",
-        avatar: "/assets/img/team/sagnik_roy.jpg",
-        desc: "Organizer",
-
-        socialIcon1: "bx bxl-github",
-        socialLink1: "https://github.com/sagnik1511",
-
-        socialIcon2: "bx bxl-linkedin",
-        socialLink2: "https://www.linkedin.com/in/sagnik1511/",
-
-        socialIcon3: "bx bxl-twitter",
-        socialLink3: "https://twitter.com/Agnik1511S",
-    },
+    }
 ];
 
 /* ********************************************************** */
