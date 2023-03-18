@@ -27,7 +27,7 @@ registerButton.addEventListener('click', (event) => {
           roll: roll
         })
     };
-    fetch('http://localhost:8080/api/v1/participant/create', options)
+    fetch('https://neuroverse.bijit.xyz/api/v1/participant/create', options)
       .then(response => {
         return response.json();
       })
