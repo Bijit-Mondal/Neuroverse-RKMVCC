@@ -50,6 +50,22 @@ let teamDetails = [
     },
     {
         id: 4,
+        name: "Sayan Das",
+        avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/18/pci_uid_6415d3080cc88.jpg",
+        desc: "Organizer",
+
+        socialIcon1: "bx bxl-github",
+        socialLink1: "https://github.com/SayanDasDev",
+
+        socialIcon2: "bx bxl-linkedin",
+        socialLink2: "https://www.linkedin.com/in/das-sayan/",
+
+        socialIcon3: "bx bx-code-alt",
+        socialLink3: "https://www.hackerrank.com/SayanDasDev",
+    
+    },
+    {
+        id: 5,
         name: "Bijit Mondal",
         avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/17/Bijit_uid_641496a7a8e4d.jpg",
         desc: "Organizer",
