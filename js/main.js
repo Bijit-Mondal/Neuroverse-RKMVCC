@@ -19,7 +19,9 @@ $(window).on("load", () => {
 });
 
 // Scrolled *******************************************************
-
+$(document).ready(function() {
+    $("div#form_modal_1").toggleClass("active");
+  });
 $(window).scroll(() => {
     $("header").toggleClass("scrolled", window.scrollY > 1000);
 });
@@ -120,4 +122,8 @@ $("form[name='mentee-registration'] button#discordModal").click(function () {
 
 $("div#form_modal i#modal_close").click(function () {
     $("div#form_modal").removeClass("active");
+});
+
+$("div#form_modal_1 i#modal_close_1").click(function () {
+    $("div#form_modal_1").removeClass("active");
 });
