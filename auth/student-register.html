@@ -104,7 +104,7 @@
         </div>
 
         <div class="sub_head">
-            <h2><span>You must have a hackerrank account</span></h2>
+            <h2><span>Only RKMVCC Student can participate in Neuroverse</span></h2>
         </div>
 
         <form id="auth_form" class="container" name="mentee-registration">
@@ -132,29 +132,20 @@
                 <input type="tel" class="form-control" placeholder="" id="phone" name="phone" required />
             </div>
 
+            <div class="form-group">
+                <label for="college">College Name<span>*</span></label>
+                <p>Which college are you form?</p>
+
+                <select name="college" id="college" required>
+                    <option disable value="RKMVCC">RKMVCC</option>
+                </select>
+            </div>
+
             <!-- <div class="form-group">
                 <label for="college">College <span>*</span></label>
                 <p>Where do you study?</p>
                 <input type="text" class="form-control" placeholder="" id="college" name="College" required />
             </div> -->
-
-            <div class="form-group">
-                <label for="semester">Current Semester <span>*</span></label>
-                <p>What is your current semester of study?</p>
-
-                <select name="semester" id="semester" required>
-                    <option value="2">2nd Semester</option>
-                    <option value="4">4th Semester</option>
-                    <option value="6">6th Semester</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="roll">Roll Number <span>*</span></label>
-                <p>Roll number of your in current sem!</p>
-                <input type="number" class="form-control" placeholder="" id="roll" name="roll" required />
-            </div>
-
             <div class="form-group">
                 <label for="stream">Department <span>*</span></label>
                 <p>which department do you study in?</p>
@@ -174,6 +165,24 @@
                     <option value="Computer Science">Computer Science (1st year only)</option>
                 </select>
             </div>
+
+            <div class="form-group">
+                <label for="semester">Current Semester <span>*</span></label>
+                <p>What is your current semester of study?</p>
+
+                <select name="semester" id="semester" required>
+                    <option value="2">2nd Semester</option>
+                    <option value="4">4th Semester</option>
+                    <option value="6">6th Semester</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="roll">Roll Number <span>*</span></label>
+                <p>Roll number of your in current sem!</p>
+                <input type="number" class="form-control" placeholder="" id="roll" name="roll" required />
+            </div>
+
 
 
             <label class="form-group input-checkbox" for="manualCheckbox">

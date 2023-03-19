@@ -41,6 +41,12 @@ let faqQuesAns = [
     },
     {
         id: 7,
+        faqQues: "Which programming language is supported in this event",
+        faqAns: "All programming languages available on HackerRank can be used in this event.",
+        faqIcon: "bx bxs-chat",
+    },
+    {
+        id: 8,
         faqQues: "My question is not listed in here!",
         faqAns: "Contact Us, We will be happy to help you.",
         faqIcon: "bx bxs-chat",
