@@ -32,7 +32,7 @@ registerButton.addEventListener('click', (event) => {
         return response.json();
       })
       .then(response => {
-        if(response.status == 200){$("div#form_modal").toggleClass("active");
+        if(response.status == 200){
           $("div#form_modal").toggleClass("active");
         }else{
           alert(response.message);
