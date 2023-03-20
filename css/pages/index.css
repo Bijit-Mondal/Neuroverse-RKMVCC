@@ -10,7 +10,7 @@ section#banner {
     justify-content: center;
     align-items: center;
     background: url(../../assets/img/banner_bg.png) no-repeat 50% 50% / cover,
-        linear-gradient(315deg, #0d1524 0%, #0f1927 80%);
+        linear-gradient(315deg, #24130d 0%, #271c0f 80%);
     z-index: 1;
 }
 
@@ -1681,8 +1681,8 @@ section#team div.members .member_card {
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    background: rgba(62, 100, 255, 0.05);
-    box-shadow: 0 4px 4px rgba(50, 69, 107, 0.1);
+    background: rgba(255, 171, 62, 0.05);
+    box-shadow: 0 4px 4px rgba(107, 78, 50, 0.1);
     overflow: hidden;
     z-index: 1;
     transition: all 0.4s ease;
@@ -1797,6 +1797,27 @@ section#team div.members .member_card .social a i {
 
 section#team div.members .member_card .social a:hover i {
     transform: rotateY(1turn);
+}
+.else {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#team div.else a.btn {
+    margin: 1rem 0;
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--codefont);
+    color: var(--darkwhite);
+    background: linear-gradient(45deg, var(--primarylight), var(--primarydark));
+    background-size: 200%;
+    outline: none;
+    border: none;
+    text-align: justify;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 /* **************************** Responsive **************************** */

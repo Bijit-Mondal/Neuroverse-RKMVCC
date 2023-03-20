@@ -4,38 +4,38 @@
 
 // Leaderboard Winners Data
 
-let winnersData = [
-    {
-        id: 1,
-        rank: "1",
-        points: "102",
-        name: "Hello Peter!",
-        college: "Marvel Cinematic Universe",
-        githubUser: "username",
-        githubLink: "https://github.com/",
-        githubImg: "https://picsum.photos/200",
-    },
-    {
-        id: 2,
-        rank: "2",
-        points: "96",
-        name: "Hello Peter!",
-        college: "Marvel Cinematic Universe",
-        githubUser: "username",
-        githubLink: "https://github.com/",
-        githubImg: "https://picsum.photos/200",
-    },
-    {
-        id: 3,
-        rank: "3",
-        points: "85",
-        name: "Hello Peter!",
-        college: "Marvel Cinematic Universe",
-        githubUser: "username",
-        githubLink: "https://github.com/",
-        githubImg: "https://picsum.photos/200",
-    },
-];
+// let winnersData = [
+//     {
+//         id: 1,
+//         rank: "1",
+//         points: "102",
+//         name: "Hello Peter!",
+//         college: "Marvel Cinematic Universe",
+//         githubUser: "username",
+//         githubLink: "https://github.com/",
+//         githubImg: "https://picsum.photos/200",
+//     },
+//     {
+//         id: 2,
+//         rank: "2",
+//         points: "96",
+//         name: "Hello Peter!",
+//         college: "Marvel Cinematic Universe",
+//         githubUser: "username",
+//         githubLink: "https://github.com/",
+//         githubImg: "https://picsum.photos/200",
+//     },
+//     {
+//         id: 3,
+//         rank: "3",
+//         points: "85",
+//         name: "Hello Peter!",
+//         college: "Marvel Cinematic Universe",
+//         githubUser: "username",
+//         githubLink: "https://github.com/",
+//         githubImg: "https://picsum.photos/200",
+//     },
+// ];
 
 // Leaderboard Ranks Data
 
@@ -91,30 +91,30 @@ let ranksData = [
 // Leaderboard Preview Mapping
 /* ********************************************************** */
 
-let winnersContent = document.querySelector("div.leaderboard div.winners");
+// let winnersContent = document.querySelector("div.leaderboard div.winners");
 let ranksContent = document.querySelector(
     "div.leaderboard div.rank_table table tbody"
 );
 
 // Leaderboard Winners Preview
 
-Object.values(winnersData).map((val) => {
-    winnersContent.innerHTML += `
-        <div class="position_card">
-            <div class="stats">
-                <h2>${val.points}</h2>
-                <p>Points</p>
-                <span>Rank: ${val.rank}</span>
-            </div>
-            <div class="desc">
-                <img src="${val.githubImg}" alt="Github Avatar" />
-                <h1>${val.name}</h1>
-                <a href="${val.githubLink}" class="btn">@${val.githubUser}</a>
-                <p>${val.college}</p>
-            </div>
-        </div>
-    `;
-});
+// Object.values(winnersData).map((val) => {
+//     winnersContent.innerHTML += `
+//         <div class="position_card">
+//             <div class="stats">
+//                 <h2>${val.points}</h2>
+//                 <p>Points</p>
+//                 <span>Rank: ${val.rank}</span>
+//             </div>
+//             <div class="desc">
+//                 <img src="${val.githubImg}" alt="Github Avatar" />
+//                 <h1>${val.name}</h1>
+//                 <a href="${val.githubLink}" class="btn">@${val.githubUser}</a>
+//                 <p>${val.college}</p>
+//             </div>
+//         </div>
+//     `;
+// });
 
 // Leaderboard Ranks Preview
 
