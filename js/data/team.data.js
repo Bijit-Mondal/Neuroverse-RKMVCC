@@ -4,10 +4,25 @@
 
 let teamDetails = [
     {
+        id: 0,
+        name: "Dr. Chayan Halder",
+        avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/20/Chayan-Halder_uid_64187a2ec9ce0.jpg",
+        desc: "Organizing Head",
+
+        socialIcon1: "bx bxl-github",
+        socialLink1: "#",
+
+        socialIcon2: "bx bxl-linkedin",
+        socialLink2: "#",
+
+        socialIcon3: "bx bx-code-alt",
+        socialLink3: "#",
+    },
+    {
         id: 1,
         name: "Sudipta Sarkar",
         avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/20/Sudipta-Sarkar_uid_6418694142ef4.jpeg",
-        desc: "Organizer/MCQ Setter",
+        desc: "Organizer",
 
         socialIcon1: "bx bxl-github",
         socialLink1: "https://github.com/Rik-Sarkar-07",
@@ -20,9 +35,24 @@ let teamDetails = [
     },
     {
         id: 2,
+        name: "Jaidip Patra",
+        avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/20/Jaidip-Patra_uid_64187b74ee0d7.jpeg",
+        desc: "Organizer",
+
+        socialIcon1: "bx bxl-github",
+        socialLink1: "https://github.com/jaidippatra",
+
+        socialIcon2: "bx bxl-linkedin",
+        socialLink2: "https://www.linkedin.com/in/jaidip-patra-a60895a1",
+
+        socialIcon3: "bx bx-code-alt",
+        socialLink3: "https://www.hackerrank.com/jaidippatra",
+    },
+    {
+        id: 3,
         name: "Jishnu Bandyopadhyay",
         avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/17/Jishnu_uid_6414962903dff.jpeg",
-        desc: "Organizer/Testing",
+        desc: "Organizer",
 
         socialIcon1: "bx bxl-github",
         socialLink1: "https://github.com/TheRealJishnu",
@@ -34,7 +64,7 @@ let teamDetails = [
         socialLink3: "https://www.hackerrank.com/therealjishnu",
     },
     {
-        id: 3,
+        id: 4,
         name: "Darpan Bhattacharya",
         avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/17/Darpan_uid_64149629daefa.jpeg",
         desc: "Organizer",
@@ -49,7 +79,7 @@ let teamDetails = [
         socialLink3: "http://hackerrank.com/winxtron",
     },
     {
-        id: 4,
+        id: 5,
         name: "Bitan Majumder",
         avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/17/Bitan_uid_6414962a694a6.jpeg",
         desc: "Organizer",
@@ -64,7 +94,7 @@ let teamDetails = [
         socialLink3: "https://www.hackerrank.com/bitanmajumder201",
     },
     {
-        id: 5,
+        id: 6,
         name: "Sayan Das",
         avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/18/pci_uid_6415d3080cc88.jpg",
         desc: "Organizer",
@@ -80,7 +110,7 @@ let teamDetails = [
     
     },
     {
-        id: 6,
+        id: 7,
         name: "Bijit Mondal",
         avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/17/Bijit_uid_641496a7a8e4d.jpg",
         desc: "Organizer",
