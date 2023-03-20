@@ -93,22 +93,22 @@ let teamDetails = [
         socialIcon3: "bx bx-code-alt",
         socialLink3: "https://www.hackerrank.com/bitanmajumder201",
     },
-    {
-        id: 6,
-        name: "Sayan Das",
-        avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/18/pci_uid_6415d3080cc88.jpg",
-        desc: "Organizer",
+    // {
+    //     id: 6,
+    //     name: "Sayan Das",
+    //     avatar: "https://bijit.xyz/cockpit-master/storage/uploads/2023/03/18/pci_uid_6415d3080cc88.jpg",
+    //     desc: "Organizer",
 
-        socialIcon1: "bx bxl-github",
-        socialLink1: "https://github.com/SayanDasDev",
+    //     socialIcon1: "bx bxl-github",
+    //     socialLink1: "https://github.com/SayanDasDev",
 
-        socialIcon2: "bx bxl-linkedin",
-        socialLink2: "https://www.linkedin.com/in/das-sayan/",
+    //     socialIcon2: "bx bxl-linkedin",
+    //     socialLink2: "https://www.linkedin.com/in/das-sayan/",
 
-        socialIcon3: "bx bx-code-alt",
-        socialLink3: "https://www.hackerrank.com/SayanDasDev",
+    //     socialIcon3: "bx bx-code-alt",
+    //     socialLink3: "https://www.hackerrank.com/SayanDasDev",
     
-    },
+    // },
     {
         id: 7,
         name: "Bijit Mondal",
