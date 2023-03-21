@@ -68,7 +68,11 @@ let ranksData = [
         id: 16,
         name: "Soubhagya Paul",
         designation:"Volunteer"
-    }
+    },{
+        id: 17,
+        name: "Arkodip Ganguly",
+        designation:"Photographer"
+    },
 ];
 
 /* ********************************************************** */
