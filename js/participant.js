@@ -35,10 +35,10 @@ registerButton.addEventListener('click', (event) => {
         if(response.status == 200){
           $("div#form_modal").toggleClass("active");
         }else{
-          alert(response.message);
+          console.log(response.message);
         }
       })
-      .catch(err => alert(err));
+      .catch(err => console.log(err));
   } else {
     alert("All Details are not given properly")
   }
