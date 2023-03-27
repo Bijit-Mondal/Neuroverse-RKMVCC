@@ -225,8 +225,8 @@ div.manual .block_grp ul li span:nth-child(3) {
 }
 
 div.manual .block_grp ul.blue li {
-    background: rgba(62, 100, 255, 0.05);
-    border-left: 6px solid rgba(62, 100, 255, 0.8);
+    background: rgba(255, 165, 62, 0.05);
+    border-left: 6px solid rgba(255, 139, 62, 0.8);
 }
 div.manual .block_grp ul.yellow li {
     background: rgba(255, 227, 0, 0.05);
