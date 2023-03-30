@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Site Title -->
+    <title>Neuroverse: Tech Fest of RKMVCC</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" type="image/png" href="./assets/img/jwoc_icon.svg" />
+
+    <!-- Meta Character & Device Dimension -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Meta Author, Description, Keywords -->
+    <meta name="author" content="RKMVCC Computer Science Department" />
+    <meta name="description"
+        content="Hey Techie, Welcome to the tech fest of Ramakrishna Mission Vivekananda Centenary College, Rahara" />
+    <meta name="keywords" content="Neuroverse, 2k23, RKMVCC, coding, competition, code, Neuroverse coding competition, Neuroverse 2023" />
+
+    
+    <!-- Meta OG: Site, Title, Description, Image, Link Displayed -->
+    <meta property="og:site_name" content="Neuroverse 2k23" />
+    <meta property="og:title" content="Neuroverse 2k23" />
+    <meta property="og:description"
+        content="Neuroverse is the annual tech fest of RKMVCC for students to show their potential" />
+    <meta property="og:url" content="https://neuroverse.ilib.website/" />
+    <meta property="og:type" content="website" />
+    <!-- https://bijit.xyz/cockpit-master/storage/uploads/2023/03/18/iPhone-14-Pro-Max---1_uid_6415d27e44b92.jpg -->
+    <meta property="og:image" content="https://bijit.xyz/cockpit-master/storage/uploads/2023/03/18/iPhone-14-Pro-Max---1_uid_6415d27e44b92.jpg" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" />
+
+
+    <!-- Address Bar/Tab Color -->
+    <!-- Mobile -->
+    <meta name="theme-color" content="#2d1a07" />
+    <!-- Windows -->
+    <meta name="msapplication-navbutton-color" content="#241e0d" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/libraries/bootstrap.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/components/settings.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/pages/leaderboard.css" />
+
+    <!-- External JS -->
+    <script defer src="./js/libraries/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/libraries/confetti.browser.min.js"></script>
+
+    <!-- Main JS -->
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/data/elseteam.data.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header Navbar Start -->
+    <header class="default">
+        <nav>
+            <a href="./" class="nav_brand">
+                <img src="./assets/img/jwoc_logo.svg" alt="Logo" />
+                <span>Neuroverse</span>
+            </a>
+
+            <a class="btn nav_btn goBack">
+                <i class="bx bx-log-out"></i>
+                <span>Back</span>
+            </a>
+        </nav>
+    </header>
+    <!-- Header Navbar End -->
+
+    <!-- Banner Start -->
+    <section id="leaderboard">
+        <div class="sub_head">
+            <h2>Full Team</h2>
+            <!-- <p>Check your rank here!</p> -->
+        </div>
+
+        <div class="leaderboard container">
+
+            <!-- Else -->
+            <div class="rank_table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">NeuroSquad Designation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- All Ranks Mapped: "elseteam.data.js" -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- Footer Start -->
+    <footer class="default">
+        <img src="./assets/img/jwoc_logo.svg" alt="Logo" />
+        <h2>NeuroVerse</h2>
+        <h4>NeuroVerse Coding Competition</h4>
+        <p>Copyright &copy; NeuroVerse 2023. All rights reserved.</p>
+        <div class="social">
+            <a href="mailto:bijitmondalrkmvcc@gmail.com"><i class="bx bxs-envelope"></i></a>
+            <a href=""><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+</body>
+
+</html>

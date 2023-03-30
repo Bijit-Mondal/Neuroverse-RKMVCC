@@ -11,7 +11,7 @@ registerButton.addEventListener('click', (event) => {
         const options = {
             method: 'POST',
             headers: {'content-type': 'application/json'},
-            body: 'https://hackerrank.com/bijit567'
+            body: hackerRankID
           };
           
           fetch(`https://neuroverse.bijit.xyz/api/v1/finalist/hackerRankID/${id}/${email}`, options)
