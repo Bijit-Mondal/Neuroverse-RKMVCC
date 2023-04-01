@@ -51,7 +51,7 @@ let eventsTimeline = [
     date: "1 April, 2023",
     name: "Final Day of Competition",
     desc:
-      "Standup for the Champions! <a href='#' target='_blank'>Get Here!</a>",
+      "Standup for the Champions! <a href='/leaderboard.html' target='_blank'>Get Here!</a>",
     daysLeft: Math.floor(
       (new Date("1 April, 2023 23:59:59").getTime() - new Date().getTime()) /
         intValue +
