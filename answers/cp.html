@@ -80,7 +80,7 @@
             </p>
             <ul>
                 <li>
-            <div class="d-flex justify-content-center">
+            <!-- <div class="d-flex justify-content-center"> -->
                 <pre><code class="language-c my-code">#include &lt;math.h&gt;
 #include &lt;stdio.h&gt;
 #include &lt;string.h&gt;
@@ -115,17 +115,102 @@ int main(){
     printf("NO\n");
     return 0;
 }</code></pre>
-                </div>
-                </li></ul>
-            <ul>
-                
-
+                <!-- </div> -->
+                </li>
+            
+            
             </ul>
-            <!-- <a href="../assets/docs/jwoc-code-of-conduct.pdf" class="btn" target="_blank" rel="noopener">
-                <i class="bx bxs-download"></i>
-                <span>Get Bulletin</span>
-            </a> -->
         </div>
+
+        <div class="bulletin container">
+            <img src="../assets/img/jwoc_icon.svg" alt="Neuroverse Icon" />
+            <h2>Tambi’s Bicycle</h2>
+            <h3>Explanation with code</h3>
+            <p>
+                The solution is just the difference between d and c.
+            </p>
+            <ul>
+                <li>
+            <!-- <div class="d-flex justify-content-center"> -->
+                <pre><code class="language-c my-code">#include &lt;stdio.h&gt;
+int main() {
+    int c,d;
+    scanf("%d%d",&amp;c,&amp;d);
+    printf("%d\n",d-c);
+    return 0;
+}</code></pre>
+                <!-- </div> -->
+                </li>
+            
+            
+            </ul>
+        </div>
+
+        <div class="bulletin container">
+            <img src="../assets/img/jwoc_icon.svg" alt="Neuroverse Icon" />
+            <h2>Array Sum</h2>
+            <h3>Explanation with code</h3>
+            <p>
+                Sure, here's the text with proper superscript and subscript formatting:
+
+The problem basically asks for the number of unordered pairs (a,b) such that a+b = S. The solution is basically iterating over all numbers in a, and for each number p, to count the number of elements q in the array such that p+q = S.
+
+The naïve way to implement the solution was to simply iterate over all a<sub>i</sub> and then for each a<sub>i</sub> to again iterate over all a<sub>j</sub> and count all such a<sub>j</sub> such that a<sub>i</sub> + a<sub>j</sub> = S. This solution has a complexity of O(n<sup>2</sup>) and was allowed to pass some (around 50%) of the test cases.
+
+However, the intended solution is a bit optimized than the naïve one. Firstly, we observe that the order of the elements in a is not significant, thus we can sort a in non-decreasing order. Then, we iterate over all the elements of a. For each a<sub>i</sub>, instead of re-iterating over a and finding all suitable pairs, we perform binary search to find the lower and upper bounds of S - a<sub>i</sub> in a and update our answer accordingly. In this fashion, instead of spending O(n) time trying to find the suitable pairs for a<sub>i</sub>, we can do the same operation in O(log<sub>2</sub>n) time, thus optimizing the final solution from O(n<sup>2</sup>) to O(n log<sub>2</sub>n).
+
+An alternate solution is by maintaining the count of all elements of a in a data-structure like a map in C++/Java or dictionary in Python/Pypy, which allows inserting and accessing data in at most O(log<sub>2</sub>n) time, and for all a<sub>i</sub>, to check the count of S - a<sub>i</sub> in the map, and updating our answer accordingly.
+            </p>
+            <ul>
+                <li>
+            <!-- <div class="d-flex justify-content-center"> -->
+                <pre><code class="language-python my-code">n,s = map(int,input().split())
+arr = list(map(int,input().split()))
+mp = {}
+for e in arr:
+    mp[e] = mp.get(e,0)+1
+ans = 0
+for e in arr:
+    ans += mp.get(s-e,0)
+print(ans//2)
+</code></pre>
+                <!-- </div> -->
+                </li>
+            
+            
+            </ul>
+        </div>
+
+        <div class="bulletin container">
+            <img src="../assets/img/jwoc_icon.svg" alt="Neuroverse Icon" />
+            <h2>Somewhere Door</h2>
+            <h3>Explanation with code</h3>
+            <p>This problem asks that given two numbers <code class="language-html">t<sub>1</sub></code> and <code class="language-html">t<sub>2</sub></code>, and an array of integers <code class="language-html">s</code>, we need to find <code class="language-html">max (s<sub>i</sub>)</code> such that <code class="language-html">s<sub>i</sub> ≤ t<sub>1</sub></code> and <code class="language-html">min (s<sub>j</sub>)</code> such that <code class="language-html">s<sub>j</sub> ≥ t<sub>2</sub></code> and print <code class="language-html">s<sub>j</sub> - s<sub>i</sub> + 1</code>.</p>
+<p>We can solve this problem by simply sorting the array <code class="language-html">s</code>, and then finding <code class="language-html">max (s<sub>i</sub>)</code> such that <code class="language-html">s<sub>i</sub> ≤ t<sub>1</sub></code> and <code class="language-html">min (s<sub>j</sub>)</code> such that <code class="language-html">s<sub>j</sub> ≥ t<sub>2</sub></code> and print <code class="language-html">s<sub>j</sub> - s<sub>i</sub> + 1</code> in linear time.</p>
+<p>Alternately, we can also not sort the array and just find optimal <code class="language-html">s<sub>i</sub></code> and <code class="language-html">s<sub>j</sub></code> values by comparing current <code class="language-html">s<sub>i</sub></code> and <code class="language-html">s<sub>j</sub></code> values with other elements of <code class="language-html">s</code> and updating them accordingly.</p>
+            <ul>
+                <li>
+            <!-- <div class="d-flex justify-content-center"> -->
+                <pre><code class="language-python my-code">t1,t2 = map(int,input().split())
+n = int(input())
+arr = list(map(int,input().split()))
+arr.sort()
+a1,a2 = -1,-1
+for e in arr:
+    if e &lt;= t1:
+        a1 = e
+    elif e &gt;= t2:
+        a2 = e
+        break
+print(a2-a1+1)
+</code></pre>
+                <!-- </div> -->
+                </li>
+            
+            
+            </ul>
+        </div>
+
     </section>
     
 </body>
