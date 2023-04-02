@@ -107,4 +107,8 @@ pre[class*="language-"] {
 
 .my-code{
     font-size: 20px;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    overflow: scroll;
 }
