@@ -72,22 +72,47 @@
     <section id="bulletin">
         <div class="bulletin container">
             <img src="../assets/img/jwoc_icon.svg" alt="Neuroverse Icon" />
-            <h2>Welcome to Neuroverse</h2>
+            <h2>Welcome to Neuroverse 2023</h2>
             <h3>Explanation with code</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                In this problem, the task was to check whether the word neuroverse was contained in the given string or not. This can be done by iterating over all characters in the string, and check if the current character is the potential starting character for the word neuroverse. If we encounter such a character, then we print <code class="language-c">YES</code> along with the index of that character in the string. Otherwise, if we do not find such a character even after scanning the entire string, then we print <code class="language-c">NO</code>.
+                The solution could be implemented either by manually writing the code for matching the substring starting from the current character, or by using various built in libraries in different programming languages.
             </p>
             <div class="d-flex flex-column">
-                <pre>
-                    <code class="language-js my-code">
+                <pre><code class="language-c my-code">#include &lt;math.h&gt;
 #include &lt;stdio.h&gt;
-int main() {
-    printf("Hello, world!");
+#include &lt;string.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;limits.h&gt;
+#include &lt;stdbool.h&gt;                        
+int min(int x,int y){
+    if(x &lt; y) return x;
+    return y;
+}                    
+bool check(char str[], int idx){
+    bool done = true;
+    char nv[] = "neuroverse";
+    for(int i = idx; i &lt; min(idx+10,strlen(str)); i++){
+        if(nv[i-idx] != str[i]){
+            done = false;
+            break;
+        }
+    }
+    if(strlen(str)-idx &lt; 10) done = false;
+        return done;
+    }                
+int main(){
+    char str[50];
+    scanf("%s",str);
+    for(int i = 0; i &lt; strlen(str); i++){
+        if(check(str,i)){
+            printf("YES\n%d\n",i);
+            return 0;
+        }
+    }
+    printf("NO\n");
     return 0;
-}
-        
-                    </code>
-                </pre>
+}</code></pre>
                 </div>
             <ul>
                 
